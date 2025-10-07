@@ -6,5 +6,5 @@ Since SpeechBrain is a beta release research-oriented toolkit, it aims to suppor
 
 ## Reporting a Vulnerability
 
-Vulnerabilities may be reported confidentially to speechbrainproject@gmail.com
+Vulnerabilities may be reported confidentially to saurabhkumarsingh8787@gmail.com
 
