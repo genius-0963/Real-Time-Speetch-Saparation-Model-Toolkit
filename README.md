@@ -394,22 +394,6 @@ python recipes/WSJ0Mix/separation/train.py \
 
 ---
 
-## 📊 Performance Metrics
-
-<div align="center">
-
-### **🎯 Separation Quality Comparison**
-
-```mermaid
-radarChart
-    title Model Performance Comparison
-    axis Quality, Speed, Efficiency, Robustness
-    "SepFormer" [9, 6, 7, 8]
-    "ConvTasNet" [7, 9, 9, 7]
-    "DPRNN" [8, 8, 8, 8]
-    "MetricGAN" [7, 5, 6, 9]
-```
-
 ### **📈 Performance Benchmarks**
 
 | Model | Dataset | SI-SNRi (dB) | SDRi (dB) | PESQ | ⚡ Latency |
@@ -420,19 +404,6 @@ radarChart
 | 🎛️ **MetricGAN** | WHAM! | 13.4 | 15.2 | 2.89 | 25-35ms |
 
 ### **💻 Real-Time Performance**
-
-```mermaid
-barChart
-    title Real-Time Factor (RTF) Performance
-    x-axis Model
-    y-axis RTF (Lower is Better)
-    series RTF
-    data
-        ConvTasNet 0.3
-        DPRNN 0.5
-        SepFormer 0.8
-        MetricGAN 0.6
-```
 
 | Model | ⚡ Latency | 🔄 RTF | 💻 CPU Usage | 🎮 GPU Memory |
 |-------|-----------|--------|--------------|---------------|
@@ -721,21 +692,6 @@ pie
 - **💬 Code-switching handling** for multilingual speakers
 
 ### **👥 Enhanced Multi-Speaker Support**
-<div align="center">
-
-```mermaid
-barChart
-    title Speaker Capacity Evolution
-    x-axis Version
-    y-axis Max Speakers
-    series Capacity
-    data
-        "v1.0" 2
-        "v2.0" 3
-        "v3.0" 5
-        "v4.0" 8
-```
-
 </div>
 
 - **👥 4+ speaker separation** capabilities
@@ -793,16 +749,6 @@ graph LR
 - **💾 Model quantization** for reduced memory footprint
 
 ### **⚡ Performance Optimizations**
-<div align="center">
-
-```mermaid
-radarChart
-    title Optimization Targets
-    axis Speed, Accuracy, Efficiency, Scalability
-    "Current" [7, 8, 6, 7]
-    "Target" [9, 9, 9, 9]
-```
-
 </div>
 
 - **🗜️ Model compression** techniques
