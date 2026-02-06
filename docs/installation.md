@@ -29,19 +29,19 @@ import real_time_speech_separation_toolkit as rtsst
 Once you have created your Python environment (see instructions below) you can simply type:
 
 ```
-git clone https://github.com/speechbrain/speechbrain.git
-cd speechbrain
+git clone https://github.com/genius-0963/Real-Time-Speetch-Saparation-Model-Toolkit.git
+cd Real-Time-Speetch-Saparation-Model-Toolkit
 pip install -r requirements.txt
 pip install --editable .
 ```
 
-Then you can access SpeechBrain with:
+Then you can access Real-Time-Speech-Separation-Model-Toolkit with:
 
 ```
-import speechbrain as sb
+import real_time_speech_separation_toolkit as rtsst
 ```
 
-Any modification made to the `speechbrain` package will be automatically interpreted as we installed it with the `--editable` flag.
+Any modification made to the `real_time_speech_separation_toolkit` package will be automatically interpreted as we installed it with the `--editable` flag.
 
 ## Test installation
 Please, run the following script  from the main folder to make sure your installation is working:
