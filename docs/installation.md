@@ -1,9 +1,9 @@
 
 # Quick installation
 
-SpeechBrain is constantly evolving. New features, tutorials, and documentation will appear over time. SpeechBrain can be installed via PyPI to rapidly use the standard library. Moreover, a local installation can be used to run experiments and modify/customize the toolkit and its recipes.
+Real-Time-Speech-Separation-Model-Toolkit is constantly evolving. New features, tutorials, and documentation will appear over time. Real-Time-Speech-Separation-Model-Toolkit can be installed via PyPI to rapidly use the standard library. Moreover, a local installation can be used to run experiments and modify/customize the toolkit and its recipes.
 
-SpeechBrain supports both CPU and GPU computation. For most recipes, however, a GPU is necessary during training. Please note that CUDA must be properly installed to use GPUs.
+Real-Time-Speech-Separation-Model-Toolkit supports both CPU and GPU computation. For most recipes, however, a GPU is necessary during training. Please note that CUDA must be properly installed to use GPUs.
 
 We support [PyTorch](https://pytorch.org/get-started/locally/) 1.9+ and Python 3.8-3.12 (newer Python versions than advertised may work if supported by PyTorch).
 We recommend you upgrade to at least 3.9+ as support for 3.8 will be removed eventually.
@@ -13,15 +13,15 @@ We recommend you upgrade to at least 3.9+ as support for 3.8 will be removed eve
 Once you have created your Python environment (see instructions below) you can simply type:
 
 ```
-pip install speechbrain
+pip install real-time-speech-separation-model-toolkit
 ```
 
 Depending on your OS, audio loading may require the install of optional torchaudio dependencies to work. If it does not work out-of-the box for you, please visit [audio troubleshooting](audioloading.html).
 
-Then you can then access SpeechBrain with:
+Then you can then access Real-Time-Speech-Separation-Model-Toolkit with:
 
 ```
-import speechbrain as sb
+import real_time_speech_separation_toolkit as rtsst
 ```
 
 ## Install locally
