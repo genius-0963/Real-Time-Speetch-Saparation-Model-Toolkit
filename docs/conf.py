@@ -22,9 +22,9 @@ sys.path.insert(-1, os.path.abspath("../"))
 
 # -- Project information -----------------------------------------------------
 
-project = "SpeechBrain"
-copyright = "2021, SpeechBrain"
-author = "SpeechBrain"
+project = "Real-Time-Speech-Separation-Model-Toolkit"
+copyright = "2024, Real-Time-Speech-Separation-Model-Toolkit"
+author = "Real-Time-Speech-Separation-Model-Toolkit"
 
 # The full version, including alpha/beta/rc tags
 release = "0.5.0"

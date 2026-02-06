@@ -1,4 +1,4 @@
-# SpeechBrain documentation
+# Real-Time-Speech-Separation-Model-Toolkit documentation
 
 Please install additional dependencies:
 
@@ -22,7 +22,7 @@ core of Sphinx. For this, after much searching, we use better-apidoc.
 
 ## Tutorial integration
 
-Tutorials are now inside of the main SpeechBrain repository.
+Tutorials are now inside of main Real-Time-Speech-Separation-Model-Toolkit repository.
 
 ### Contributor guidelines for tutorials
 

@@ -1,5 +1,5 @@
-.. SpeechBrain documentation master file, created by
-   sphinx-quickstart on Tue Apr  7 20:07:28 2020.
+.. Real-Time-Speech-Separation-Model-Toolkit documentation master file, created by
+   sphinx-quickstart on Thu Feb 6 17:47:00 2024.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
@@ -7,22 +7,21 @@
 User guide
 ==========
 
-SpeechBrain is an open-source and all-in-one speech toolkit based on PyTorch.
+Real-Time-Speech-Separation-Model-Toolkit is an open-source and all-in-one speech toolkit based on PyTorch.
 This documentation provides install steps, tutorials and API documentation
 necessary to help users develop their projects.
 
 .. dropdown:: License considerations (Apache 2.0)
 
-   SpeechBrain is released under the `Apache License, version 2.0 <https://github.com/speechbrain/speechbrain/blob/develop/LICENSE>`_. The Apache license is a popular BSD-like license.
-   SpeechBrain can be redistributed for free, even for commercial purposes, although you can not take off the license headers (and under some circumstances you may have to distribute a license document).
-   Apache is not a viral license like the GPL, which forces you to release your modifications to the source code. Also note that this project has no connection to the Apache Foundation, other than that we use the same license terms.
+   Real-Time-Speech-Separation-Model-Toolkit is released under `Apache License, version 2.0 <https://github.com/genius-0963/Real-Time-Speetch-Saparation-Model-Toolkit/blob/main/LICENSE>`_. The Apache license is a popular BSD-like license.
+   Real-Time-Speech-Separation-Model-Toolkit can be redistributed for free, even for commercial purposes, although you can not take off the license headers (and under some circumstances you may have to distribute a license document).
+   Apache is not a viral license like GPL, which forces you to release your modifications to the source code. Also note that this project has no connection to Apache Foundation, other than that we use the same license terms.
+   It is a community project, which means that discussions are engaged community-wide while decisions are taken by the project maintainers with respect to community views.
+   There is no legal institution associated as an owner of Real-Time-Speech-Separation-Model-Toolkit. Furthermore, and due to the Apache License, anyone that would disagree with the way project is being run can fork it and start a new toolkit.
 
-   It is a community project, which means that discussions are engaged community-wide while decisions are taken by Dr. Ravanelli and Dr. Parcollet with respect to the community views.
-   There is no legal institution associated as an owner of SpeechBrain. Furthermore, and due to the Apache License, anyone that would disagree with the way the project is being run can fork it and start a new toolkit.
+.. dropdown:: Referencing Real-Time-Speech-Separation-Model-Toolkit (BibTeX)
 
-.. dropdown:: Referencing SpeechBrain (BibTeX)
-
-   If you use SpeechBrain in your research or business, please cite it using the following BibTeX entry:
+   If you use Real-Time-Speech-Separation-Model-Toolkit in your research or business, please cite it using the following BibTeX entry:
 
    .. code-block:: bibtex
 
@@ -87,23 +86,21 @@ API
    :hidden:
    :maxdepth: 3
 
-   Core library (speechbrain) <API/speechbrain>
+   Core library (real_time_speech_separation_toolkit) <API/real_time_speech_separation_toolkit>
    HyperPyYAML (hyperpyyaml) <API/hyperpyyaml>
 
 .. autosummary::
 
-   speechbrain
-   speechbrain.alignment
-   speechbrain.augment
-   speechbrain.dataio
-   speechbrain.decoders
-   speechbrain.inference
-   speechbrain.integrations
-   speechbrain.lm
-   speechbrain.lobes
-   speechbrain.nnet
-   speechbrain.processing
-   speechbrain.tokenizers
-   speechbrain.utils
-
+   real_time_speech_separation_toolkit
+   real_time_speech_separation_toolkit.alignment
+   real_time_speech_separation_toolkit.augment
+   real_time_speech_separation_toolkit.dataio
+   real_time_speech_separation_toolkit.decoders
+   real_time_speech_separation_toolkit.inference
+   real_time_speech_separation_toolkit.integrations
+   real_time_speech_separation_toolkit.lm
+   real_time_speech_separation_toolkit.lobes
+   real_time_speech_separation_toolkit.nnet
+   real_time_speech_separation_toolkit.processing
+   real_time_speech_separation_toolkit.utils
    hyperpyyaml.core
