@@ -1,25 +1,25 @@
 # What testing coverage approaches are needed?
 
 1. Dependencies: version control (check commit ID dates)
-  <br/> see: [requirements.txt](https://github.com/speechbrain/speechbrain/blob/develop/requirements.txt)
+  <br/> see: [requirements.txt](https://github.com/genius-0963/Real-Time-Speetch-Saparation-Model-Toolkit/blob/main/requirements.txt)
   <br/> run: `find *txt . | grep extra`
 2. Docstring tests: commented function signatures <br/>_(of functions intended for outer calls)_
-3. [Unittests](https://github.com/speechbrain/speechbrain/tree/develop/tests/unittests) per function-critical code block
-4. [Integration tests](https://github.com/speechbrain/speechbrain/tree/develop/tests/integration) for vanilla experiments to cover use-cases on a generic task basis
+3. [Unittests](https://github.com/genius-0963/Real-Time-Speetch-Saparation-Model-Toolkit/tree/main/tests/unittests) per function-critical code block
+4. [Integration tests](https://github.com/genius-0963/Real-Time-Speetch-Saparation-Model-Toolkit/tree/main/tests/integration) for vanilla experiments to cover use-cases on a generic task basis
 5. Regression testing: standing interfaces & their refactoring
 6. Linters for automated style checks & corrections of python & yaml code
 
 ## Where to get things done?
 
-1. Raise your questions & engage in [Discussions](https://github.com/speechbrain/speechbrain/discussions)
-2. Report a bug or request a feature, open [Issues](https://github.com/speechbrain/speechbrain/issues/new/choose)
-3. Contribute [Pull requests](https://github.com/speechbrain/speechbrain/pulls)
-4. Release pretrained models through SpeechBrain
-   <br/> e.g. registering linking HuggingFace account to SpeechBrain for hosting your model card
+1. Raise your questions & engage in [Discussions](https://github.com/genius-0963/Real-Time-Speetch-Saparation-Model-Toolkit/discussions)
+2. Report a bug or request a feature, open [Issues](https://github.com/genius-0963/Real-Time-Speetch-Saparation-Model-Toolkit/issues/new/choose)
+3. Contribute [Pull requests](https://github.com/genius-0963/Real-Time-Speetch-Saparation-Model-Toolkit/pulls)
+4. Release pretrained models through Real-Time-Speech-Separation-Model-Toolkit
+   <br/> e.g. registering linking HuggingFace account to Real-Time-Speech-Separation-Model-Toolkit for hosting your model card
 
 ## GitHub workflow: strategy by configuration
 
-API configurations are located at [.github/workflows](https://github.com/speechbrain/speechbrain/tree/develop/.github/workflows)
+API configurations are located at [.github/workflows](https://github.com/genius-0963/Real-Time-Speetch-Saparation-Model-Toolkit/tree/main/.github/workflows)
 <br/>_(all creating a one-time ubuntu-latest environment)_
 
 ---

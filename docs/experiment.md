@@ -1,5 +1,5 @@
 # Running an experiment
-In SpeechBrain, you can train most models in recipes like this:
+In Real-Time-Speech-Separation-Model-Toolkit, you can train most models in recipes like this:
 
 ```
 > cd recipes/<dataset>/<task>/<model>
@@ -9,13 +9,13 @@ In SpeechBrain, you can train most models in recipes like this:
 Follow the steps in the README of each recipe for more details.
 
 The results will be saved in the `output_folder` specified in the yaml file.
-The folder is created by calling `sb.core.create_experiment_directory()` in `train.py`. Both detailed logs and experiment outputs are saved there. Furthermore, less verbose logs are output to stdout.
+The folder is created by calling `rtsst.core.create_experiment_directory()` in `train.py`. Both detailed logs and experiment outputs are saved there. Furthermore, less verbose logs are output to stdout.
 
 ## YAML basics
 
-SpeechBrain uses an extended variant of YAML named HyperPyYAML. It offers an elegant way to specify the hyperparameters of a recipe.
+Real-Time-Speech-Separation-Model-Toolkit uses an extended variant of YAML named HyperPyYAML. It offers an elegant way to specify the hyperparameters of a recipe.
 
-In SpeechBrain, the YAML file is not a plain list of parameters, but for each parameter, we specify the function (or class) that is using it.
+In Real-Time-Speech-Separation-Model-Toolkit, the YAML file is not a plain list of parameters, but for each parameter, we specify the function (or class) that is using it.
 This not only makes the specification of the parameters more transparent but also allows us to properly initialize all the entries by simply calling `load_hyperpyyaml` (from HyperPyYAML).
 
 ### Security warning

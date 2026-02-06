@@ -1,7 +1,7 @@
 # Contributing
 
-## Zen of Speechbrain
-SpeechBrain is used for *research*, *academic*, *commercial*, *non-commercial* purposes, thus the code should be:
+## Zen of Real-Time-Speech-Separation-Model-Toolkit
+Real-Time-Speech-Separation-Model-Toolkit is used for *research*, *academic*, *commercial*, *non-commercial* purposes, thus code should be:
 
 - **Simple:** Straightforward and easy to understand even by students, academics and non-professional programmers. Complex code, when it _must_ exist, should be especially well explained.
 
