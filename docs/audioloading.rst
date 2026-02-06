@@ -8,7 +8,7 @@ provides troubleshooting steps for your audio loading troubles.
 Introduction
 ============
 
-SpeechBrain relies on
+Real-Time-Speech-Separation-Model-Toolkit relies on
 `torchaudio <https://pytorch.org/audio/stable/index.html>`_
 for loading audio files in most cases. Please first try to **update torchaudio**
 if you are encountering issues. Please also ensure that you are using the
@@ -61,7 +61,7 @@ Note for developers & breaking torchaudio `2.x` changes
 
 With torchaudio `<2.x`, backends were selected through
 ``torchaudio.set_audio_backend``. This function was deprecated and then
-removed in the `2.x` branch of torchaudio and is no longer used in SpeechBrain.
+removed in the `2.x` branch of torchaudio and is no longer used in Real-Time-Speech-Separation-Model-Toolkit.
 Since then, the backend is (optionally) selected through the ``backend``
 argument of :func:`torchaudio.load` and :func:`torchaudio.info`.
 
