@@ -11,17 +11,17 @@ Real-Time-Speech-Separation-Model-Toolkit is used for *research*, *academic*, *c
 
 - **Modular:** It should be easy to use any of the functionality from the toolkit. Break up functions/classes when it helps. Group functionality logically. Avoid unnecessary coupling.
 
-- **Well documented:** Docs should be complete, easy to navigate and easy to discover. Consider [writing a tutorial](https://github.com/speechbrain/speechbrain/tree/develop/docs#tutorial-integration).
+- **Well documented:** Docs should be complete, easy to navigate and easy to discover. Consider [writing a tutorial](https://github.com/genius-0963/Real-Time-Speetch-Saparation-Model-Toolkit/tree/main/docs#tutorial-integration).
 
 ## Creating Pull Requests on GitHub
 
 0. We use git and GitHub.
-1. Fork the speechbrain repository (https://github.com/speechbrain/speechbrain)
+1. Fork the Real-Time-Speech-Separation-Model-Toolkit repository (https://github.com/genius-0963/Real-Time-Speetch-Saparation-Model-Toolkit)
 on GitHub under your own account.
-    (This creates a copy of SpeechBrain under your account, and GitHub
+    (This creates a copy of Real-Time-Speech-Separation-Model-Toolkit under your account, and GitHub
     knows where it came from, and we typically call this "upstream".)
-2. Clone your own speechbrain repository.
-    `git clone https://github.com/ <your-account> /speechbrain`
+2. Clone your own Real-Time-Speech-Separation-Model-Toolkit repository.
+    `git clone https://github.com/ <your-account> /Real-Time-Speech-Separation-Model-Toolkit`
     (This downloads the git repository to your machine, git knows where
     it came from, and calls it "origin".)
 3. Create a branch for each specific feature you are developing.
