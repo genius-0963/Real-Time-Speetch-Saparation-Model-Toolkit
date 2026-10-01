@@ -1,0 +1,78 @@
+name: CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  test-sepformer:
+    name: Test SepFormer Minimal
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.10", "3.11", "3.12"]
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v5
+      with:
+        python-version: ${{ matrix.python-version }}
+        cache: 'pip'
+    
+    - name: Install PyTorch
+      run: |
+        pip install torch torchaudio --index-url https://download.pytorch.org/whl/cpu
+    
+    - name: Test SepFormer Minimal
+      run: |
+        python -c "
+import torch
+from sepformer_minimal import sepformer_wham, sepformer_librimix
+
+# Test WHAM model (8kHz)
+model = sepformer_wham()
+x = torch.randn(1, 16000)
+with torch.no_grad():
+    out = model(x)
+assert out.shape == (1, 16000, 2), f'Expected (1, 16000, 2), got {out.shape}'
+print(f'WHAM model: {sum(p.numel() for p in model.parameters()):,} params - OK')
+
+# Test LibriMix model (16kHz)
+model = sepformer_librimix()
+x = torch.randn(1, 32000)
+with torch.no_grad():
+    out = model(x)
+assert out.shape == (1, 32000, 2), f'Expected (1, 32000, 2), got {out.shape}'
+print(f'LibriMix model: {sum(p.numel() for p in model.parameters()):,} params - OK')
+
+print('All SepFormer tests passed!')
+"
+
+  test-speechbrain-core:
+    name: Test SpeechBrain Core
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.10", "3.11"]
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v5
+      with:
+        python-version: ${{ matrix.python-version }}
+        cache: 'pip'
+    
+    - name: Install dependencies
+      run: |
+        pip install hyperpyyaml huggingface_hub joblib numpy packaging pandas scipy sentencepiece torch torchaudio tqdm transformers
+        pip install -e .
+    
+    - name: Run core unittests
+      run: |
+        python -m pytest tests/unittests/test_core.py -v
